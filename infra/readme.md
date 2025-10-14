@@ -17,7 +17,7 @@ sudo apt-get install docker-compose up
 IP_ADDRESS=$(curl -L -4 iprs.fly.dev)
 
 gcloud compute firewall-rules create \
-pydata --allow=tcp:6006,tcp:4317 \
+pydata --allow=tcp:6006,tcp:4317,tcp:8080 \
 --description="pydata for arize" \
 --direction=INGRESS \
 --target-tags=pydata \
@@ -38,7 +38,7 @@ gcloud kms keys list --location global --keyring sops --project=np-public-traini
 
 sops encrypt --gcp-kms projects/np-public-training/locations/global/keyRings/sops/cryptoKeys/sops-key --input-type dotenv .env > .env.sops
 
-sops --input-type dotenv --output-type dotenv --decrypt .env.sops
+sops --input-type dotenv --output-type dotenv --decrypt .env.sops > .env
 
 ```
 
