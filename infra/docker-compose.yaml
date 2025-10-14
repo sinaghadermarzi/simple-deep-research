@@ -1,0 +1,16 @@
+# docker-compose.yml
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    # Mount your host's gcloud Application Default Credentials into the container
+    # so the Google Cloud client libraries can pick up ADC without a separate
+    # service account file. Make sure you ran on the host:
+    #   gcloud auth application-default login
+    # and that the file exists at $HOME/.config/gcloud/application_default_credentials.json
+    volumes:
+      - ${HOME}/.config/gcloud/application_default_credentials.json:/secrets/application_default_credentials.json:ro
+      - .env:/app/.env:ro
+    env_file:
+      - ./.env
