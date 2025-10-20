@@ -64,3 +64,6 @@ docker-compose down && docker-compose build && docker-compose up --force-recreat
 
 modify caddyfile to allow ip
 modify gcp firewall rule
+curl ifconfig.me
+
+curl https://llm-proxy.np-training.dev/docs
