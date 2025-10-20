@@ -44,7 +44,7 @@ services:
       - caddy_data:/data
       - caddy_config:/config
     environment:
-      EMAIL: npatta01@gmail.com
+      CADDY_EMAIL: npatta01@gmail.com
     restart: unless-stopped
 
 volumes:

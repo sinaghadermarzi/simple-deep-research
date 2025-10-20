@@ -5,8 +5,8 @@ from typing import Dict, Any, Optional
 from fastapi import FastAPI, Request, HTTPException, Header
 from fastapi.responses import JSONResponse
 
-from openai import OpenAI
-from tavily import TavilyClient
+from openai import AsyncOpenAI
+from tavily import AsyncTavilyClient
 
 from cache_firestore import FirestoreCache
 from secrets_config import OPENAI_API_KEY, TAVILY_API_KEY
@@ -22,9 +22,9 @@ FIRESTORE_COLLECTION = os.getenv("FIRESTORE_COLLECTION", "pydata-deep-research-p
 cache = FirestoreCache(FIRESTORE_COLLECTION)
 app = FastAPI(title="Research Proxy (Firestore Cache, Official Clients)")
 
-# Official clients
-openai_client = OpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE)
-tavily_client = TavilyClient(api_key=TAVILY_API_KEY)
+# Official async clients for better concurrency
+openai_client = AsyncOpenAI(api_key=OPENAI_API_KEY, base_url=OPENAI_BASE)
+tavily_client = AsyncTavilyClient(api_key=TAVILY_API_KEY)
 
 
 
@@ -54,7 +54,7 @@ async def chat_completions(request: Request):
     }
     kwargs = {k: body[k] for k in allowed if k in body}
 
-    completion = openai_client.chat.completions.create(**kwargs)
+    completion = await openai_client.chat.completions.create(**kwargs)
     data = completion.model_dump()  # convert to API-like JSON
     # use cache's default TTL (days) by omitting the TTL argument
     cache.set(ck, data)
@@ -73,7 +73,7 @@ async def tavily_search(request: Request ):
         return JSONResponse(content=cached)
 
     # The Tavily client takes kwargs like: query, search_depth, max_results, include_answer, ...
-    result = tavily_client.search(**body)
+    result = await tavily_client.search(**body)
     # use cache's default TTL (days) by omitting the TTL argument
     cache.set(ck, result)
     return JSONResponse(content=result)

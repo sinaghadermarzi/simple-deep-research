@@ -1,14 +1,55 @@
 {
-  email {env.EMAIL}
+  email {$CADDY_EMAIL}
 }
 
-proxy.np-training.dev {
-  encode zstd gzip
-  handle_path /healthz { respond "ok" 200 }
-  reverse_proxy research-proxy:8080
-}
+ (restrict_ip) {
+  @not_allowed {
+    not remote_ip 34.11.200.211 74.105.161.196
+  }
+  respond @not_allowed "Access denied" 403
+ }
 
-traces.np-training.dev {
+# --- Shared handlers ---
+(handle_llm_tracing) {
+  import restrict_ip
+
   encode zstd gzip
   reverse_proxy phoenix:6006
+  # avoid pinning browsers to HTTPS
+  header -Strict-Transport-Security
+}
+
+(handle_llm_proxy) {
+  import restrict_ip
+
+  encode zstd gzip
+  handle_path /healthz {
+    respond "ok" 200
+  }
+  reverse_proxy proxy_cache_server:8080
+  # avoid pinning browsers to HTTPS
+  header -Strict-Transport-Security
+}
+
+# --- llm-tracing: HTTP + HTTPS, no redirect ---
+http://llm-tracing.np-training.dev {
+  import handle_llm_tracing
+}
+https://llm-tracing.np-training.dev {
+  import handle_llm_tracing
+}
+
+# --- llm-proxy: HTTP + HTTPS, no redirect ---
+http://llm-proxy.np-training.dev {
+  import handle_llm_proxy
+}
+https://llm-proxy.np-training.dev {
+  import handle_llm_proxy
+}
+
+# --- Fallback for unrecognized subdomains (HTTP only) ---
+# This catches any other subdomain under np-training.dev over HTTP and returns 404.
+# It does not affect HTTPS/TLS. See notes for HTTPS options.
+http://*.np-training.dev {
+  respond "Unknown subdomain" 404
 }

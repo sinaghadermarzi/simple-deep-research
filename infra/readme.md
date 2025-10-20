@@ -40,6 +40,8 @@ sops encrypt --gcp-kms projects/np-public-training/locations/global/keyRings/sop
 
 sops --input-type dotenv --output-type dotenv --decrypt .env.sops > .env
 
+sops edit .env.sops --input-type dotenv --output-type dotenv 
+
 ```
 
 
@@ -52,5 +54,9 @@ gcloud compute ssh --zone "us-west1-b" "pydata" --project "np-public-training"
 docker-compose -f docker-compose__arize.yaml
 
 docker-compose build
+
+docker-compose down && docker-compose build && docker-compose up
+
+docker-compose down && docker-compose build && docker-compose up --force-recreate caddy
 
 ```
