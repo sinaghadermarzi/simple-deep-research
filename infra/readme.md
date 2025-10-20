@@ -60,3 +60,7 @@ docker-compose down && docker-compose build && docker-compose up
 docker-compose down && docker-compose build && docker-compose up --force-recreate caddy
 
 ```
+
+
+modify caddyfile to allow ip
+modify gcp firewall rule
