@@ -19,7 +19,7 @@ OpenAI and Gemini's Deep Research offerings are a great way to get a detailed re
 
 In this begginer friendly tutorial, we’ll walk through building a simple lightweight agent-style workflow to perform deep research.
 
-A Deep Research Workflow is composed of    
+A Deep Research Workflow is composed of -    
 (a) Understanding what the user is asking for    
 (b) Performing web searches on the topic    
 (c) summarizing the findings to a report    
