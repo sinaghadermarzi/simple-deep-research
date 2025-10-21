@@ -20,11 +20,11 @@ OpenAI and Gemini's Deep Research offerings are a great way to get a detailed re
 In this begginer friendly tutorial, we’ll walk through building a simple lightweight agent-style workflow to perform deep research.
 
 A Deep Research Workflow is composed of -    
-(a) Understanding what the user is asking for    
-(b) Performing web searches on the topic    
-(c) summarizing the findings to a report    
+    (a) Understanding what the user is asking for    
+    (b) Performing web searches on the topic    
+    (c) summarizing the findings to a report    
 
-For this workflow, we would need a LLM, agent framework, web search tool.
+For this workflow, we would need a LLM, agent framework, web search tool.    
 For this session, we will orchestrate the workflow using Langgraph, with OpenAI as the LLM and Tavilly as the web crawl provider.
 
 ### Outline
@@ -41,9 +41,9 @@ For this session, we will orchestrate the workflow using Langgraph, with OpenAI 
 ### Setup
 We will use Github Codespaces.
 
-The workshop uses OpenAi as the LLM and Tavilly as the web search tool.
-During the wokrshop, we will provide a key.
-If you would like to use your own setup, please follow the below links
+The workshop uses OpenAi as the LLM and Tavilly as the web search tool.    
+During the wokrshop, we will provide a key.    
+If you would like to use your own setup, please follow the below links-    
 
 [OpenAi](https://platform.openai.com/api-keys)
 [Tavily](https://app.tavily.com/home)
@@ -51,7 +51,7 @@ If you would like to use your own setup, please follow the below links
 
 
 ### Takeaway
-We hope that attendess will walk away armedd with the knowlege on how to use a fraemwork like Langraph to build an agentic workflow to solve problems like deep Research. 
+We hope that attendess will walk away armed with the knowlege on how to use a fraemwork like Langraph to build an agentic workflow to solve problems like deep Research. 
 
 
 ## Youtube Title
