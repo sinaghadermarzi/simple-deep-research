@@ -1,7 +1,7 @@
 # Pydata Seatttle 2025 Proposal
 
 ## Title
-Building a Deep Research Agentic Worklflow
+Building a Deep Research Agentic Workflow
 
 ## Session type: 
 Tutorial
@@ -10,14 +10,14 @@ Tutorial
 
 OpenAI and Gemini's Deep Research offerings are a great way to get a detailed research report on a topic.
 
-In this begginer friendly tutorial, we’ll walk through building a simple lightweight agent workflow to perform deep research.
+In this beginner friendly tutorial, we’ll walk through building a simple lightweight agent workflow to perform deep research.
 
 
 ## Description
 
 OpenAI and Gemini's Deep Research offerings are a great way to get a detailed research report on a topic.
 
-In this begginer friendly tutorial, we’ll walk through building a simple lightweight agent-style workflow to perform deep research.
+In this beginner friendly tutorial, we’ll walk through building a simple lightweight agent-style workflow to perform deep research.
 
 A Deep Research Workflow is composed of -    
     (a) Understanding what the user is asking for    
@@ -25,7 +25,7 @@ A Deep Research Workflow is composed of -
     (c) summarizing the findings to a report    
 
 For this workflow, we would need a LLM, agent framework, web search tool.    
-For this session, we will orchestrate the workflow using Langgraph, with OpenAI as the LLM and Tavilly as the web crawl provider.
+For this session, we will orchestrate the workflow using LangGraph, with OpenAI as the LLM and Tavilly as the web crawl provider.
 
 ### Outline
 
@@ -37,6 +37,7 @@ For this session, we will orchestrate the workflow using Langgraph, with OpenAI 
 - [:60 - :80] Summarizing the findings
 - [:80 - :85] Some production implementation and evaluation
 - [:85 - :90] Q/A
+
 
 ### Setup
 We will use Github Codespaces.
@@ -51,9 +52,6 @@ If you would like to use your own setup, please follow the below links-
 
 
 ### Takeaway
-We hope that attendess will walk away armed with the knowlege on how to use a fraemwork like Langraph to build an agentic workflow to solve problems like deep Research. 
+We hope that attendees will walk away armed with the knowldege on how to use a framework like LangGraph to build an agentic workflow to solve problems like deep Research. 
 
-
-## Youtube Title
-Building a Deep Research Agentic Worklflow
 
