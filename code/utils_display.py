@@ -1,3 +1,13 @@
+"""
+Acknowledgments
+
+The content of the utils_display.py was borrowed from the LangGraph Repo
+https://github.com/langchain-ai/deep_research_from_scratch/blob/main/notebooks/utils.py
+
+"""
+
+
+
 from rich.console import Console
 from rich.panel import Panel
 from rich.text import Text
@@ -51,10 +61,6 @@ def format_messages(messages):
         else:
             console.print(Panel(content, title=f"📝 {msg_type}", border_style="white"))
 
-
-def format_message(messages):
-    """Alias for format_messages for backward compatibility"""
-    return format_messages(messages)
 
 
 def show_prompt(prompt_text: str, title: str = "Prompt", border_style: str = "blue"):
