@@ -9,7 +9,7 @@
                     "response_metadata": {},
                     "type": "human",
                     "name": null,
-                    "id": "404dc47b-f4af-4407-ae6c-32831d9498df"
+                    "id": "6296f9f1-cb71-4919-a870-5a5a6bef2c1c"
                 },
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
@@ -55,7 +55,7 @@
                     },
                     "type": "ai",
                     "name": null,
-                    "id": "lc_run--1b9651c7-0943-41cc-aa33-4dfebb3e8c95-0",
+                    "id": "lc_run--30a36930-a9e3-49c7-b0a2-62e73250b89e-0",
                     "tool_calls": [
                         {
                             "name": "think_tool",
@@ -84,14 +84,14 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "additional_kwargs",
-                        "content",
-                        "id",
+                        "tool_calls",
                         "name",
                         "invalid_tool_calls",
+                        "id",
                         "usage_metadata",
-                        "tool_calls",
-                        "response_metadata"
+                        "content",
+                        "response_metadata",
+                        "additional_kwargs"
                     ]
                 },
                 "__pydantic_private__": null
@@ -106,7 +106,7 @@
                     "response_metadata": {},
                     "type": "tool",
                     "name": "think_tool",
-                    "id": "6370b225-c214-405d-a8ca-298effb59c46",
+                    "id": "b64fecac-dffe-4b88-b506-4be115f2ca57",
                     "tool_call_id": "call_45xbaf46My95CspGlA9zzQKY",
                     "artifact": null,
                     "status": "success"
@@ -114,12 +114,12 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "content",
-                        "id",
-                        "name",
-                        "status",
                         "artifact",
-                        "tool_call_id"
+                        "name",
+                        "id",
+                        "tool_call_id",
+                        "content",
+                        "status"
                     ]
                 },
                 "__pydantic_private__": null
@@ -159,7 +159,7 @@
                     },
                     "type": "ai",
                     "name": null,
-                    "id": "lc_run--b6cf2ca3-ea8a-421d-9a3e-91d593988688-0",
+                    "id": "lc_run--40e6d3b2-aff1-4db4-8337-d179ab6c3c25-0",
                     "tool_calls": [
                         {
                             "name": "web_search_tool",
@@ -207,14 +207,14 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "additional_kwargs",
-                        "content",
-                        "id",
+                        "tool_calls",
                         "name",
                         "invalid_tool_calls",
+                        "id",
                         "usage_metadata",
-                        "tool_calls",
-                        "response_metadata"
+                        "content",
+                        "response_metadata",
+                        "additional_kwargs"
                     ]
                 },
                 "__pydantic_private__": null
@@ -229,7 +229,7 @@
                     "response_metadata": {},
                     "type": "tool",
                     "name": "web_search_tool",
-                    "id": "f6f99c17-48d8-43c0-bbfe-c62be5f26e9c",
+                    "id": "8be44c38-bb45-4369-9200-4489ee438772",
                     "tool_call_id": "call_rGN6F6VfOjpdUIfqedPw0CWr",
                     "artifact": null,
                     "status": "success"
@@ -237,12 +237,12 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "content",
-                        "id",
-                        "name",
-                        "status",
                         "artifact",
-                        "tool_call_id"
+                        "name",
+                        "id",
+                        "tool_call_id",
+                        "content",
+                        "status"
                     ]
                 },
                 "__pydantic_private__": null
@@ -257,7 +257,7 @@
                     "response_metadata": {},
                     "type": "tool",
                     "name": "web_search_tool",
-                    "id": "7e321fd5-9b90-46ea-b999-8b9291dc5c79",
+                    "id": "e97a8824-dfe4-49e6-ba9a-715f1b5b79dd",
                     "tool_call_id": "call_zQD4q8Fw61ppNH6RVBPwDCFY",
                     "artifact": null,
                     "status": "success"
@@ -265,12 +265,12 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "content",
-                        "id",
-                        "name",
-                        "status",
                         "artifact",
-                        "tool_call_id"
+                        "name",
+                        "id",
+                        "tool_call_id",
+                        "content",
+                        "status"
                     ]
                 },
                 "__pydantic_private__": null
@@ -285,7 +285,7 @@
                     "response_metadata": {},
                     "type": "tool",
                     "name": "web_search_tool",
-                    "id": "68b36e48-dc93-4c2e-bd83-e0fe21d449cc",
+                    "id": "11fe97b2-3411-4e80-8809-04a686759383",
                     "tool_call_id": "call_7U1zJb449ZYOxbpmLCE6XjRl",
                     "artifact": null,
                     "status": "success"
@@ -293,12 +293,12 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "content",
-                        "id",
-                        "name",
-                        "status",
                         "artifact",
-                        "tool_call_id"
+                        "name",
+                        "id",
+                        "tool_call_id",
+                        "content",
+                        "status"
                     ]
                 },
                 "__pydantic_private__": null
@@ -338,7 +338,7 @@
                     },
                     "type": "ai",
                     "name": null,
-                    "id": "lc_run--2b7780a5-cd1f-45fb-a71c-053aefd20ed3-0",
+                    "id": "lc_run--6612326e-db12-4362-a16c-d9544a126048-0",
                     "tool_calls": [
                         {
                             "name": "think_tool",
@@ -367,14 +367,14 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "additional_kwargs",
-                        "content",
-                        "id",
+                        "tool_calls",
                         "name",
                         "invalid_tool_calls",
+                        "id",
                         "usage_metadata",
-                        "tool_calls",
-                        "response_metadata"
+                        "content",
+                        "response_metadata",
+                        "additional_kwargs"
                     ]
                 },
                 "__pydantic_private__": null
@@ -389,7 +389,7 @@
                     "response_metadata": {},
                     "type": "tool",
                     "name": "think_tool",
-                    "id": "81d30d10-0882-4ddb-8460-45a5474dffbc",
+                    "id": "43750a6f-ca5a-4328-a76d-74f7c80aabad",
                     "tool_call_id": "call_v0vmmNkgk1l8E7DDTa1TEACr",
                     "artifact": null,
                     "status": "success"
@@ -397,12 +397,12 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "content",
-                        "id",
-                        "name",
-                        "status",
                         "artifact",
-                        "tool_call_id"
+                        "name",
+                        "id",
+                        "tool_call_id",
+                        "content",
+                        "status"
                     ]
                 },
                 "__pydantic_private__": null
@@ -442,7 +442,7 @@
                     },
                     "type": "ai",
                     "name": null,
-                    "id": "lc_run--6bfe02a8-f98c-41a1-b2df-4d3480ab8d1c-0",
+                    "id": "lc_run--0b7d573e-56f0-4e65-b0a6-e2f4fe0db344-0",
                     "tool_calls": [
                         {
                             "name": "web_search_tool",
@@ -490,14 +490,14 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "additional_kwargs",
-                        "content",
-                        "id",
+                        "tool_calls",
                         "name",
                         "invalid_tool_calls",
+                        "id",
                         "usage_metadata",
-                        "tool_calls",
-                        "response_metadata"
+                        "content",
+                        "response_metadata",
+                        "additional_kwargs"
                     ]
                 },
                 "__pydantic_private__": null
@@ -512,7 +512,7 @@
                     "response_metadata": {},
                     "type": "tool",
                     "name": "web_search_tool",
-                    "id": "ae0c0324-72c8-4258-8c95-ea40a82ab6bf",
+                    "id": "ffe9eb31-2000-49ce-ba5b-5d7ee93ab3e9",
                     "tool_call_id": "call_OMLQBMUTjVrmPl87tqdz80cH",
                     "artifact": null,
                     "status": "success"
@@ -520,12 +520,12 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "content",
-                        "id",
-                        "name",
-                        "status",
                         "artifact",
-                        "tool_call_id"
+                        "name",
+                        "id",
+                        "tool_call_id",
+                        "content",
+                        "status"
                     ]
                 },
                 "__pydantic_private__": null
@@ -540,7 +540,7 @@
                     "response_metadata": {},
                     "type": "tool",
                     "name": "web_search_tool",
-                    "id": "ed47c537-8e40-4c1a-9360-1879b3a5f754",
+                    "id": "167f6f5d-56c3-49f2-bde4-2284bf07cef5",
                     "tool_call_id": "call_ohwCLuQZQ2WGe8RENpZFBfky",
                     "artifact": null,
                     "status": "success"
@@ -548,12 +548,12 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "content",
-                        "id",
-                        "name",
-                        "status",
                         "artifact",
-                        "tool_call_id"
+                        "name",
+                        "id",
+                        "tool_call_id",
+                        "content",
+                        "status"
                     ]
                 },
                 "__pydantic_private__": null
@@ -568,7 +568,7 @@
                     "response_metadata": {},
                     "type": "tool",
                     "name": "web_search_tool",
-                    "id": "ec5c6295-e4d3-4abf-bc4b-36d58abc946b",
+                    "id": "b6018daf-20ea-4cbe-af96-c1a5c3ad85c7",
                     "tool_call_id": "call_6vIacj1fFz6ZsgqRVACZPOJr",
                     "artifact": null,
                     "status": "success"
@@ -576,12 +576,12 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "content",
-                        "id",
-                        "name",
-                        "status",
                         "artifact",
-                        "tool_call_id"
+                        "name",
+                        "id",
+                        "tool_call_id",
+                        "content",
+                        "status"
                     ]
                 },
                 "__pydantic_private__": null
@@ -621,7 +621,7 @@
                     },
                     "type": "ai",
                     "name": null,
-                    "id": "lc_run--9c02179b-400d-42bc-946e-4364bfbb8b5a-0",
+                    "id": "lc_run--02ec30c2-91e4-4f27-bd6b-bc1c5c48d8e0-0",
                     "tool_calls": [
                         {
                             "name": "think_tool",
@@ -650,14 +650,14 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "additional_kwargs",
-                        "content",
-                        "id",
+                        "tool_calls",
                         "name",
                         "invalid_tool_calls",
+                        "id",
                         "usage_metadata",
-                        "tool_calls",
-                        "response_metadata"
+                        "content",
+                        "response_metadata",
+                        "additional_kwargs"
                     ]
                 },
                 "__pydantic_private__": null
@@ -672,7 +672,7 @@
                     "response_metadata": {},
                     "type": "tool",
                     "name": "think_tool",
-                    "id": "2aa6c3ab-d316-44bc-a4c5-b4583585c52d",
+                    "id": "03b84a66-0715-47ae-96e8-d0ae42b3fc33",
                     "tool_call_id": "call_epBZIewxkfEW1XA9flPwbJYT",
                     "artifact": null,
                     "status": "success"
@@ -680,12 +680,12 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "content",
-                        "id",
-                        "name",
-                        "status",
                         "artifact",
-                        "tool_call_id"
+                        "name",
+                        "id",
+                        "tool_call_id",
+                        "content",
+                        "status"
                     ]
                 },
                 "__pydantic_private__": null
@@ -725,7 +725,7 @@
                     },
                     "type": "ai",
                     "name": null,
-                    "id": "lc_run--340b6c0a-f811-4a2e-9836-a88fd36c108d-0",
+                    "id": "lc_run--d643c6c5-7016-43e4-87fc-3013acd3433f-0",
                     "tool_calls": [
                         {
                             "name": "summarize_findings_tool",
@@ -754,14 +754,14 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "additional_kwargs",
-                        "content",
-                        "id",
+                        "tool_calls",
                         "name",
                         "invalid_tool_calls",
+                        "id",
                         "usage_metadata",
-                        "tool_calls",
-                        "response_metadata"
+                        "content",
+                        "response_metadata",
+                        "additional_kwargs"
                     ]
                 },
                 "__pydantic_private__": null
@@ -771,12 +771,12 @@
             "py/object": "langchain_core.messages.tool.ToolMessage",
             "py/state": {
                 "__dict__": {
-                    "content": "**List of Queries and Tool Calls Made**\n- none provided\n\n**Full Comprehensive Report**\nThe research on the best coffee shops in Seattle, with a focus on ambiance as of 2025, highlights three standout establishments:\n\n1. **Storyville Coffee Company**:\n   - **Location**: Pike Place Market, Seattle, WA.\n   - **Ambiance**: Known for its cozy, lounge-like atmosphere, featuring wood and leather furnishings, Edison bulbs, and a fireplace. This setup creates a warm and inviting environment akin to a premium lounge.\n   - **Unique Features**: The coffee shop offers a unique customer experience with friendly service and a complimentary souvenir mug for first-time visitors.\n\n2. **Moore Coffee Shop**:\n   - **Location**: Downtown Seattle.\n   - **Ambiance**: Offers a vibrant and cozy setting with Latin-inspired decor, highlighted by Frida Kahlo artwork and colorful furniture. The ambiance blends warmth and style, creating a unique and inviting space.\n   - **Ownership**: The shop is Latina-owned, adding a personal and cultural touch to its ambiance.\n\n3. **Zeitgeist Coffee**:\n   - **Location**: Pioneer Square, Seattle, WA.\n   - **Ambiance**: Zeitgeist combines a warm, community-centered atmosphere with an appreciation for local art. It functions as a gallery with monthly art exhibitions, enhancing its cultural and artistic vibe.\n   - **Community Engagement**: The coffeehouse serves as a meeting place for the community, emphasizing the exchange of ideas and artistic expression.\n\nThese coffee shops are celebrated not only for their high-quality coffee but also for their distinctive and inviting ambiances, making them top choices for both locals and visitors seeking a unique coffee experience in Seattle.\n\n**List of All Relevant Sources (with citations in the report)**\n- None provided (there are no external sources listed, just comprehensive content)",
+                    "content": "**Summary**\n\nThe research on Seattle's coffee shops in 2025 highlights three establishments with standout ambiances:\n\n1. **Storyville Coffee Company** at Pike Place Market offers a cozy, lounge-like atmosphere characterized by wood and leather furnishings, Edison bulbs, and a fireplace, providing a premium lounge experience. First-time visitors receive a complimentary souvenir mug, enhancing the welcoming ambiance [1].\n\n2. **Moore Coffee Shop** in downtown Seattle features a vibrant and cozy Latin-inspired decor with Frida Kahlo artwork and colorful furniture. As a Latina-owned establishment, it offers a personal and culturally rich atmosphere [1].\n\n3. **Zeitgeist Coffee** in Pioneer Square combines a community-centered atmosphere with local art appreciation, functioning as a gallery with monthly exhibitions. It serves as a hub for community engagement and artistic expression [1].\n\nThese coffee shops are renowned for their high-quality coffee and inviting ambiances, making them preferred destinations for both locals and visitors seeking unique coffee experiences [1].\n\n**Sources**\n[1] Research on the best coffee shops in Seattle, 2025.",
                     "additional_kwargs": {},
                     "response_metadata": {},
                     "type": "tool",
                     "name": "summarize_findings_tool",
-                    "id": "f866fa89-5333-4148-b831-10a1081d24f3",
+                    "id": "264ea3ed-328e-4950-bc70-3ddf81b7b18a",
                     "tool_call_id": "call_3hT9lr2nXHAtSIYMlZrlGdVq",
                     "artifact": null,
                     "status": "success"
@@ -784,12 +784,12 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "content",
-                        "id",
-                        "name",
-                        "status",
                         "artifact",
-                        "tool_call_id"
+                        "name",
+                        "id",
+                        "tool_call_id",
+                        "content",
+                        "status"
                     ]
                 },
                 "__pydantic_private__": null
@@ -799,15 +799,15 @@
             "py/object": "langchain_core.messages.ai.AIMessage",
             "py/state": {
                 "__dict__": {
-                    "content": "Here is a comprehensive overview of the best coffee shops in Seattle, focusing on their ambiance as of 2025:\n\n1. **Storyville Coffee Company**:\n   - **Location**: Pike Place Market, Seattle, WA.\n   - **Ambiance**: This coffee shop is known for its cozy, lounge-like atmosphere featuring wood and leather furnishings, Edison bulbs, and a fireplace. This combination creates a warm and inviting environment that resembles a premium lounge experience.\n   - **Unique Features**: Storyville is noted for providing friendly service and offers a complimentary souvenir mug for first-time visitors, enhancing the customer experience.\n\n2. **Moore Coffee Shop**:\n   - **Location**: Downtown Seattle.\n   - **Ambiance**: Moore Coffee Shop offers a vibrant and cozy setting with Latin-inspired decor. The ambiance is highlighted by Frida Kahlo artwork and colorful furniture, creating a blend of warmth and style.\n   - **Ownership**: The shop is Latina-owned, adding a unique personal and cultural touch to its ambiance.\n\n3. **Zeitgeist Coffee**:\n   - **Location**: Pioneer Square, Seattle, WA.\n   - **Ambiance**: Zeitgeist Coffee combines a warm, community-centered atmosphere with a strong appreciation for local art. It functions as a gallery with monthly art exhibitions, enhancing its cultural and artistic vibe.\n   - **Community Engagement**: Known for fostering community interaction, it serves as a meeting place for exchanging ideas and showcasing artistic expression.\n\nThese establishments are celebrated for their distinctive and inviting ambiances, making them excellent choices for those seeking a unique coffee experience in Seattle.",
+                    "content": "Based on the research focusing on ambiance, here are three standout coffee shops in Seattle as of 2025:\n\n1. **Storyville Coffee Company**:\n   - **Location**: Pike Place Market, Seattle, WA.\n   - **Ambiance**: The shop offers a cozy, lounge-like atmosphere with wood and leather furnishings, Edison bulbs, and a fireplace. This creates a warm, inviting environment akin to a premium lounge.\n   - **Unique Features**: It provides a unique customer experience, including friendly service and a complimentary souvenir mug for first-time visitors.\n\n2. **Moore Coffee Shop**:\n   - **Location**: Downtown Seattle.\n   - **Ambiance**: Known for a vibrant and cozy setting with Latin-inspired decor, featuring Frida Kahlo artwork and colorful furniture. This ambiance blends warmth and style, reflecting its Latina-owned status, adding a personal cultural touch.\n\n3. **Zeitgeist Coffee**:\n   - **Location**: Pioneer Square, Seattle, WA.\n   - **Ambiance**: Zeitgeist combines a warm, community-centered atmosphere with an appreciation for local art. It functions as a gallery for local artists with monthly art exhibitions, enhancing its cultural and artistic vibe.\n   - **Community Engagement**: The coffeehouse serves as a meeting place for the community, emphasizing the exchange of ideas and artistic expression.\n\nThese coffee shops are celebrated for their distinctive and inviting ambiances, making them top choices for both locals and visitors seeking a unique coffee experience in Seattle.",
                     "additional_kwargs": {
                         "refusal": null
                     },
                     "response_metadata": {
                         "token_usage": {
-                            "completion_tokens": 326,
-                            "prompt_tokens": 6729,
-                            "total_tokens": 7055,
+                            "completion_tokens": 304,
+                            "prompt_tokens": 6567,
+                            "total_tokens": 6871,
                             "completion_tokens_details": {
                                 "accepted_prediction_tokens": 0,
                                 "audio_tokens": 0,
@@ -816,29 +816,29 @@
                             },
                             "prompt_tokens_details": {
                                 "audio_tokens": 0,
-                                "cached_tokens": 0
+                                "cached_tokens": 6272
                             }
                         },
                         "model_provider": "openai",
                         "model_name": "gpt-4o-2024-08-06",
                         "system_fingerprint": "fp_b1442291a8",
-                        "id": "chatcmpl-CZpVPx81gG1ZjVZHwfD1bQNU2I0JJ",
+                        "id": "chatcmpl-CZntqDHnQWAsNckLhoVDC0tzRUyH1",
                         "service_tier": "default",
                         "finish_reason": "stop",
                         "logprobs": null
                     },
                     "type": "ai",
                     "name": null,
-                    "id": "lc_run--f231589a-cb96-453c-966c-d8ffef970797-0",
+                    "id": "lc_run--43f790b9-d069-45ee-9f83-7ce4a2824fa6-0",
                     "tool_calls": [],
                     "invalid_tool_calls": [],
                     "usage_metadata": {
-                        "input_tokens": 6729,
-                        "output_tokens": 326,
-                        "total_tokens": 7055,
+                        "input_tokens": 6567,
+                        "output_tokens": 304,
+                        "total_tokens": 6871,
                         "input_token_details": {
                             "audio": 0,
-                            "cache_read": 0
+                            "cache_read": 6272
                         },
                         "output_token_details": {
                             "audio": 0,
@@ -849,14 +849,14 @@
                 "__pydantic_extra__": {},
                 "__pydantic_fields_set__": {
                     "py/set": [
-                        "additional_kwargs",
-                        "content",
-                        "id",
+                        "tool_calls",
                         "name",
                         "invalid_tool_calls",
+                        "id",
                         "usage_metadata",
-                        "tool_calls",
-                        "response_metadata"
+                        "content",
+                        "response_metadata",
+                        "additional_kwargs"
                     ]
                 },
                 "__pydantic_private__": null
