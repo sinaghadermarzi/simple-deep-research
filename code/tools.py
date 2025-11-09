@@ -16,7 +16,6 @@ def web_search_tool(query: str, max_results: int = 3) -> str:
     Returns:
         Formatted search results with sources
     """
-    print(f"🔍 Searching: {query}")
 
     results = utils.web_search(query, max_results=max_results)
 
