@@ -1,9 +1,10 @@
 # simple-deep-research
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/npatta01/simple-deep-research)
 
 ## About
 
-This repo contains slides and notebooks for a workshop on implementing Simple Deep Research using LangGraph.
+This repo contains slides and notebooks for a workshop on implementing Simple Deep Research workflow using LangGraph.
 
 
 ## Deep Research
