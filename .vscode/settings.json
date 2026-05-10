@@ -1,0 +1,7 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python.analysis.extraPaths": [
+        "/home/vscode/.local/lib/python3.13/site-packages",
+        "/usr/local/lib/python3.13/site-packages"
+    ]
+}
