@@ -13,8 +13,11 @@ from openinference.instrumentation.langchain import LangChainInstrumentor
 # Keep the same relative path as the notebook used
 
 OPENAI_BASE_URL = constants.OPENAI_BASE_URL
+OPENAI_API_KEY = constants.OPENAI_API_KEY
+OPENAI_MODEL = constants.OPENAI_MODEL
 PHOENIX_PROJECT_NAME = constants.PHOENIX_PROJECT_NAME
 TAVILY_BASE_URL = constants.TAVILY_BASE_URL
+TAVILY_API_KEY = constants.TAVILY_API_KEY
 
 
 # configure the Phoenix tracer
