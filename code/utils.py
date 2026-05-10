@@ -90,7 +90,7 @@ def summarize_webpage_content(webpage_content:str) -> str:
 
     try:
         summarization_model = ChatOpenAI(
-            model="gpt-4o-mini",
+            model=constants.OPENAI_MODEL,
             base_url=constants.OPENAI_BASE_URL,
         ).with_structured_output(schema.SummaryOutput)
 

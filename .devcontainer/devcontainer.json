@@ -6,7 +6,11 @@
           "extensions": [
             "ms-python.python", // Python extension
             "ms-toolsai.jupyter" // Jupyter extension
-          ]
+          ],
+          "settings": {
+            "python.defaultInterpreterPath": "/usr/local/bin/python",
+            "python.venvPath": ""
+          }
         }
       },
       "postCreateCommand": "pip install -r requirements.txt"

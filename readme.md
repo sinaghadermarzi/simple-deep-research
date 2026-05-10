@@ -41,8 +41,7 @@ The above notebooks covers some basics.
 The notebooks requires OpenAI and Tavily API keys.  
 During the workshop, a proxy server is used to avoid providing the keys.
 
-If you want to use your keys or run the notebooks after the workshop, modify [env_workshop](env_workshop). 
-Provide the keys under the section `# using own keys`
+If you want to use your keys or run the notebooks after the workshop, copy [.env.example](.env.example) to `.env` and fill in your values.
 
 
 

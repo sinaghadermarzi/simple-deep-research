@@ -45,7 +45,7 @@ def summarize_findings_tool(findings: str) -> str:
     print(f"📝 Summarizing {len(findings)} chars of findings")
     
     model = ChatOpenAI(
-        model="gpt-4o",
+        model=constants.OPENAI_MODEL,
         base_url=constants.OPENAI_BASE_URL,
         max_tokens=16000,
     )
