@@ -1,5 +1,5 @@
-import utils
-import constants
+import os
+import search_utils as utils
 from langchain_core.tools import tool
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_openai import ChatOpenAI
@@ -45,8 +45,8 @@ def summarize_findings_tool(findings: str) -> str:
     print(f"📝 Summarizing {len(findings)} chars of findings")
     
     model = ChatOpenAI(
-        model=constants.OPENAI_MODEL,
-        base_url=constants.OPENAI_BASE_URL,
+        model=os.environ.get("OPENAI_MODEL"),
+        base_url=os.environ.get("OPENAI_BASE_URL"),
         max_tokens=16000,
     )
 

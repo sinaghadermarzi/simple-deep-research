@@ -20,14 +20,14 @@ Deep Research is composed of these steps
 In order to make sure everything is setup properly, this notebook validates the keys/python env is setup
 
 
-[LangGraph Basics](notebooks/01_langgraph_basics.ipynb)  
-[LLM Basics](notebooks/01_llm_basics.ipynb).   
+[LangGraph Basics](notebooks/01a_langgraph_basics.ipynb)  
+[LLM Basics](notebooks/01b_llm_basics.ipynb).   
 The above notebooks covers some basics.
 
 [Scoping](notebooks/02_scoping.ipynb)
 
 
-[Research Step as a Workflow](notebooks/03_research_as_agent.ipynb).   
+[Research Step as a Workflow](notebooks/03a_research_as_workflow.ipynb).   
 [Research Step as a agent](notebooks/03_research_as_agent.ipynb)
 
 [Write Report](notebooks/04_write_report.ipynb)
@@ -57,7 +57,7 @@ Seattle Coffee Shop
 
 ## Slides
 
-[Link](artifacts/pydata_2025.pdf)
+[Proposal](workshop/pydata_2025_proposal.md)
 
 
 

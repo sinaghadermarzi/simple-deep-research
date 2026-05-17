@@ -1,15 +1,19 @@
 import datetime
-import requests 
+import os
+import requests
 
-import constants
-import utils
-import prompts
-from langchain_core.messages import HumanMessage, SystemMessage
+import search_utils as utils
+import prompt_utils as prompts
+from langchain_core.messages import HumanMessage, SystemMessage, filter_messages
 from tavily import TavilyClient
 from langchain_openai import ChatOpenAI
-import schema
-from langchain_core.messages import filter_messages
-import os
+from pydantic import BaseModel, Field
+
+
+class SummaryOutput(BaseModel):
+    """Schema for webpage content summarization."""
+    summary: str = Field(description="Concise summary of the webpage content")
+    key_excerpts: str = Field(description="Important quotes and excerpts")
 
 def get_today_str() -> str:
     """Get current date in a human-readable format."""
@@ -19,7 +23,7 @@ def get_today_str() -> str:
 def tavily_search(query:str, max_results: int = 3, include_raw_content=True, topic: str = "general", **kw):
     tavily_api_key = os.environ.get("TAVILY_API_KEY")
     if tavily_api_key is None:
-        r = requests.post(constants.TAVILY_BASE_URL,
+        r = requests.post(os.environ.get("TAVILY_BASE_URL"),
                         json={"query": query, "max_results": max_results, "include_raw_content": include_raw_content, "topic": topic, **kw}, timeout=60)
         r.raise_for_status()
         return r.json()
@@ -90,9 +94,9 @@ def summarize_webpage_content(webpage_content:str) -> str:
 
     try:
         summarization_model = ChatOpenAI(
-            model=constants.OPENAI_MODEL,
-            base_url=constants.OPENAI_BASE_URL,
-        ).with_structured_output(schema.SummaryOutput)
+            model=os.environ.get("OPENAI_MODEL"),
+            base_url=os.environ.get("OPENAI_BASE_URL"),
+        ).with_structured_output(SummaryOutput)
 
 
         system_prompt = prompts.summarize_webpage.format(date=utils.get_today_str(), webpage_content=webpage_content)

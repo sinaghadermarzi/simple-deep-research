@@ -1,6 +1,13 @@
     {
       "name": "Python Dev Container",
       "image": "mcr.microsoft.com/devcontainers/python:3.13", // Or a specific Python version
+      "forwardPorts": [6006, 4317],
+      "portsAttributes": {
+        "6006": {
+          "label": "Phoenix UI",
+          "onAutoForward": "notify"
+        }
+      },
       "customizations": {
         "vscode": {
           "extensions": [
